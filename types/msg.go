@@ -15,7 +15,7 @@ type ContractResult struct {
 }
 
 // Response defines the return value on a successful instantiate/execute/migrate.
-// This is the counterpart of [Response](https://github.com/CosmWasm/cosmwasm/blob/v0.14.0-beta1/packages/std/src/results/response.rs#L73-L88)
+// This is the counterpart of [Response](https://github.com/PikeEcosystem/cosmwasm/blob/v0.14.0-beta1/packages/std/src/results/response.rs#L73-L88)
 type Response struct {
 	// Messages comes directly from the contract and is its request for action.
 	// If the ReplyOn value matches the result, the runtime will invoke this
@@ -309,7 +309,7 @@ type MigrateMsg struct {
 }
 
 // UpdateAdminMsg is the Go counterpart of WasmMsg::UpdateAdmin
-// (https://github.com/CosmWasm/cosmwasm/blob/v0.14.0-beta5/packages/std/src/results/cosmos_msg.rs#L158-L160).
+// (https://github.com/PikeEcosystem/cosmwasm/blob/v0.14.0-beta5/packages/std/src/results/cosmos_msg.rs#L158-L160).
 type UpdateAdminMsg struct {
 	// ContractAddr is the sdk.AccAddress of the target contract.
 	ContractAddr string `json:"contract_addr"`
@@ -318,7 +318,7 @@ type UpdateAdminMsg struct {
 }
 
 // ClearAdminMsg is the Go counterpart of WasmMsg::ClearAdmin
-// (https://github.com/CosmWasm/cosmwasm/blob/v0.14.0-beta5/packages/std/src/results/cosmos_msg.rs#L158-L160).
+// (https://github.com/PikeEcosystem/cosmwasm/blob/v0.14.0-beta5/packages/std/src/results/cosmos_msg.rs#L158-L160).
 type ClearAdminMsg struct {
 	// ContractAddr is the sdk.AccAddress of the target contract.
 	ContractAddr string `json:"contract_addr"`

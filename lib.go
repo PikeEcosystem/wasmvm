@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/CosmWasm/wasmvm/internal/api"
-	"github.com/CosmWasm/wasmvm/types"
+	"github.com/PikeEcosystem/wasmvm/internal/api"
+	"github.com/PikeEcosystem/wasmvm/types"
 )
 
 // Checksum represents a hash of the Wasm bytecode that serves as an ID. Must be generated from this library.

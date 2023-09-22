@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/CosmWasm/wasmvm/internal/api"
-	"github.com/CosmWasm/wasmvm/types"
+	"github.com/PikeEcosystem/wasmvm/internal/api"
+	"github.com/PikeEcosystem/wasmvm/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -28,19 +28,19 @@ func TestIBC(t *testing.T) {
 }
 
 // IBCInstantiateMsg is the Go version of
-// https://github.com/CosmWasm/cosmwasm/blob/v0.14.0-beta1/contracts/ibc-reflect/src/msg.rs#L9-L11
+// https://github.com/PikeEcosystem/cosmwasm/blob/v0.14.0-beta1/contracts/ibc-reflect/src/msg.rs#L9-L11
 type IBCInstantiateMsg struct {
 	ReflectCodeID uint64 `json:"reflect_code_id"`
 }
 
 // IBCExecuteMsg is the Go version of
-// https://github.com/CosmWasm/cosmwasm/blob/v0.14.0-beta1/contracts/ibc-reflect/src/msg.rs#L15
+// https://github.com/PikeEcosystem/cosmwasm/blob/v0.14.0-beta1/contracts/ibc-reflect/src/msg.rs#L15
 type IBCExecuteMsg struct {
 	InitCallback InitCallback `json:"init_callback"`
 }
 
 // InitCallback is the Go version of
-// https://github.com/CosmWasm/cosmwasm/blob/v0.14.0-beta1/contracts/ibc-reflect/src/msg.rs#L17-L22
+// https://github.com/PikeEcosystem/cosmwasm/blob/v0.14.0-beta1/contracts/ibc-reflect/src/msg.rs#L17-L22
 type InitCallback struct {
 	ID           string `json:"id"`
 	ContractAddr string `json:"contract_addr"`
